@@ -34,7 +34,7 @@ async function run() {
             res.status(200).send(result)  
         } catch (error) {
            console.log(error) ;
-          await res.status(504).send(error)
+           res.status(504).send(error)
         }
     })
     app.get('/projects/:id',async(req,res)=>{
